@@ -1,9 +1,9 @@
 /*
  * @Author: Swarfte_Tou
  * @Date: 2021-02-17 17:11:47
- * @LastEditors: Swarfte_Tou
- * @LastEditTime: 2021-02-17 17:23:42
- * @FilePath: \1A\JAVA\T13_str.java
+ * @LastEditors: Swarfte
+ * @LastEditTime: 2021-08-13 15:44:25
+ * @FilePath: \JAVA\java_learn\T13_str.java
  * @FileOutput: pyinstaller -F -w file_name.py -p C:/python/lib/site-packages 
  * @GUImode: designer
  * @UItoPY: pyuic5 -x name.ui -o name.py 
@@ -29,16 +29,16 @@ public class T13_str {
         String z2 = "world";
         System.out.println(z1 + " " + z2);
         //如果用+连接字符串和其他数据类型，会将其他数据类型先自动转型为字符串,再連接
-        int age = 25;
+        var age = 25;
         String z = "age is " + age;
         System.out.println(z);
         //从Java 13开始，字符串可以用"""..."""表示多行字符串（Text Blocks）了
         String a = """
-                   SELECT * FROM
-                     users
-                   WHERE id > 100
-                   ORDER BY name DESC
-                   """;
+                  SELECT * FROM
+                  users
+                  WHERE id > 100
+                  ORDER BY name DESC
+                  """;
         System.out.println(a);
     }
 }
